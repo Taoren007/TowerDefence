@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Isometric RPG</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0e0f13; color: #eee; font-family: system-ui, sans-serif; }
+      #gameCanvas { display: block; width: 100vw; height: 100vh; image-rendering: pixelated; }
+      .hud { position: fixed; left: 12px; top: 12px; background: rgba(0,0,0,0.4); padding: 8px 10px; border-radius: 8px; font-size: 14px; }
+      .hud b { color: #8ee; }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+    <div class="hud">
+      <div><b>Move</b>: WASD or Arrow Keys</div>
+      <div><b>Run</b>: Shift</div>
+      <div><b>Assets</b>: place PNGs in <code>resources/</code> and edit <code>resources/config.json</code></div>
+    </div>
+    <script type="module" src="./src/game.js"></script>
+  </body>
+  </html>
+
